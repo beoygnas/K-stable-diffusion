@@ -1,0 +1,25 @@
+[TRAIN] E0: 100%|███████████████████████████████████████████████| 6250/6250 [32:55<00:00,  3.16it/s]
+[Eval] : 100%|██████████████████████████████████████████████████| 1563/1563 [03:53<00:00,  6.70it/s]
+INFO:root:      TRAIN_EPOCH:0    global_step:6250 loss:1.3590
+INFO:root:      VALIDATION       global_step:6250 loss:1.2077 | 2209.12secs passed
+INFO:root:      Train loss :    loss_en:0.6835 loss_ko:0.6755
+INFO:root:      Valid loss :    loss_en:0.6051 loss_ko:0.6026
+[TRAIN] E1: 100%|███████████████████████████████████████████████| 6250/6250 [32:55<00:00,  3.16it/s]
+[Eval] : 100%|██████████████████████████████████████████████████| 1563/1563 [03:53<00:00,  6.70it/s]
+INFO:root:      TRAIN_EPOCH:1    global_step:12500 loss:1.1826
+INFO:root:      VALIDATION       global_step:12500 loss:1.1360 | 4417.87secs passed
+INFO:root:      Train loss :    loss_en:0.5924 loss_ko:0.5903
+INFO:root:      Valid loss :    loss_en:0.5642 loss_ko:0.5717
+[TRAIN] E2: 100%|███████████████████████████████████████████████| 6250/6250 [32:55<00:00,  3.16it/s]
+[Eval] : 100%|██████████████████████████████████████████████████| 1563/1563 [03:53<00:00,  6.69it/s]
+INFO:root:      TRAIN_EPOCH:2    global_step:18750 loss:1.1235
+INFO:root:      VALIDATION       global_step:18750 loss:1.1013 | 6626.63secs passed
+INFO:root:      Train loss :    loss_en:0.5606 loss_ko:0.5629
+INFO:root:      Valid loss :    loss_en:0.5438 loss_ko:0.5576
+[TRAIN] E3: 100%|███████████████████████████████████████████████| 6250/6250 [32:58<00:00,  3.16it/s]
+[Eval] : 100%|██████████████████████████████████████████████████| 1563/1563 [03:53<00:00,  6.69it/s]INFO:root:      TRAIN_EPOCH:3    global_step:25000 loss:1.0910
+INFO:root:      VALIDATION       global_step:25000 loss:1.0849 | 8838.77secs passed                 INFO:root:      Train loss :    loss_en:0.5435 loss_ko:0.5475
+INFO:root:      Valid loss :    loss_en:0.5339 loss_ko:0.5509
+[TRAIN] E4: 100%|███████████████████████████████████████████████| 6250/6250 [32:57<00:00,  3.16it/s]
+[Eval] : 100%|██████████████████████████████████████████████████| 1563/1563 [03:53<00:00,  6.69it/s]INFO:root:      TRAIN_EPOCH:4    global_step:31250 loss:1.0766                                      INFO:root:      VALIDATION       global_step:31250 loss:1.0813 | 11050.22secs passed                INFO:root:      Train loss :    loss_en:0.5359 loss_ko:0.5406
+INFO:root:      Valid loss :    loss_en:0.5319 loss_ko:0.5494

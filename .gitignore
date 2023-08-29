@@ -1,0 +1,6 @@
+*.csv
+/dataset
+/k_tokenizer
+/text_encoder
+/tokenizer
+/train.py
