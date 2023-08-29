@@ -1,8 +1,7 @@
 
 # K-Stable-Diffusion
 한국어 텍스트로 이미지를 생성하는 모델을 만들어보는 프로젝트입니다. 
-
-
+<br><br><br>
 
 
 ## 0. Results
@@ -18,6 +17,9 @@
 
 <img src="./figure/result_3.png" width="100%" height="100%" />
 
+<br><br><br>
+
+
 ## 1. Motivation
 
 텍스트로부터 이미지를 생성하는 대표적인 디퓨전 기반의 생성모델인 stable-diffusion을 웹에서 사용해보면서 (https://stablediffusionweb.com) 한국어 텍스트가 입력으로 주어졌을 때 여러가지 문제를 느낀적이 많았습니다.
@@ -28,6 +30,8 @@
     <img src="./figure/result_before.png" width="75%" height="75%" />
 
 이런 문제가 생긴 이유는 stable-diffusion 학습에 사용된 데이터가 대부분 영어텍스트-이미지이고, 아주 조금의 한국어텍스트가 섞여있어 거기에 과적합된 것이라 생각했고, 이 모델에 한국어를 학습시켜 한국어 텍스트에 대해서도 bias가 섞이지 않은 general한 이미지를 생성하는 모델을 만들어 내는 것을 프로젝트 목표로 정했습니다.
+
+<br><br><br>
 
 
 ## 2. Methods
@@ -71,6 +75,8 @@ loss = loss_en + loss_ko
     - output shape : `batch_size x 1 x 768`
     - 원래 diffusion 모델에서는 Unet의 last hidden state를 입력으로 주지만, pooler output으로 loss를 계산하는 코드가 있었음. 
 
+<br><br><br>
+
 
 ## 3. Datasets
 
@@ -85,6 +91,8 @@ AI hub에서 4가지 한국어/영어 번역 데이터셋을 사용했습니다.
 총 4,893,326개의 텍스트쌍이 있었지만 약 25만개의 text pair만을 학습시에 데이터로 사용하였습니다. 또한, duplicate, null, max_length 초과 텍스트 등을 제거하는 전처리를 진행했습니다. 
 
 학습 시에 사용할 tokenize 할 때의 max_length는 원래 CompVis/stable-diffusion-v1-4에 맞춰 77로 정했고 모든 텍스트에 대해 일괄적용했습니다. 토크나이저 및 데이터셋과 관련해서는 `dataset.ipynb`로 정리했습니다.
+
+<br><br><br>
 
 ## 4. Experiments
 
@@ -175,6 +183,7 @@ scheduler = get_cosine_schedule_with_warmup(...)
 
     <img src="./train_result/roberta_pooler/sample.png" align="center" width="100%">
 
+<br><br><br>
 
 ## 5. Discussion / Conclusion
 
