@@ -133,15 +133,15 @@ text_encoder_teacher = CLIPTextModel.from_pretrained("/home/sangyeob/dev/d2d/5-K
 tokenizer = AutoTokenizer.from_pretrained("klue/roberta-small")
 text_encoder_student = AutoModel.from_pretrained("klue/roberta-small")
 
-df_500000 = pd.read_csv('/home/sangyeob/dev/d2d/5-K_stable_diffusion/df_500000.csv')
+df_500000 = pd.read_csv('/home/sangyeob/dev/d2d/5-K_stable_diffusion/df_1000000.csv')
 
 # Config
-epochs = 5
+epochs = 10
 learning_rate = 5e-5
 weight_decay = 1e-4
 # save_interval = 1000 
 batch_size = 32
-dataset_df = df_500000.sample(250000)
+dataset_df = df_500000.sample(1000000)
 
 logger = logging.getLogger()  
 logger.setLevel(logging.INFO)  
